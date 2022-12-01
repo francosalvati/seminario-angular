@@ -1,0 +1,7 @@
+<mat-toolbar color="primary" class="toolbar">
+  <span>carrito</span>
+</mat-toolbar>
+
+<mat-list>
+  <mat-list-item *ngFor="let item of shopList" class="item"><p>producto: {{item.nombre}}<span class="space"> cantidad: {{item.quantity}}</span></p> </mat-list-item>
+ </mat-list>

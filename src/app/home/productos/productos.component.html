@@ -1,0 +1,15 @@
+<div class="container">
+    <mat-card *ngFor="let producto of productos" class="card">
+      <div class="img">
+        <img src="{{producto.imgURL}}">
+      </div>
+      <mat-list class="list">
+        <mat-list-item class="item">{{producto.nombre}} ({{producto.stock}})</mat-list-item>
+        <mat-list-item class="item"><span *ngIf="producto.stock==0" class="badge text-primary"> (SIN STOCK) </span></mat-list-item>
+      </mat-list>
+        <app-input-int [producto]="producto" class="quantity"></app-input-int>
+      <div class="button" >
+        <button mat-raised-button color="warn" (click)="enviarCarrito(producto)" *ngIf="producto.quantity !== 0" > Agregar al carrito</button>
+      </div>
+    </mat-card>
+</div>

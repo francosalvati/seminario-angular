@@ -1,0 +1,9 @@
+<div>
+  <div class="form">
+    <button mat-mini-fab class='button' color="secondary" (click)="downQuantity(producto)">-</button>
+    <mat-form-field class="input">
+      <input matInput [(ngModel)]="producto.quantity" (keyup)="verificar(producto)" type="number" step="none">
+    </mat-form-field>
+    <button mat-mini-fab class='button' color="secondary" (click)="upQuantity(producto)">+</button>
+  </div>
+</div>
