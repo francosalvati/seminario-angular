@@ -11,6 +11,7 @@ import { ProductosComponent } from './home/productos/productos.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { InputIntComponent } from './home/productos/input-int/input-int.component';
+import { BienvenidosComponent } from './home/bienvenidos/bienvenidos.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { InputIntComponent } from './home/productos/input-int/input-int.componen
     HomeComponent,
     CarritoComponent,
     ProductosComponent,
-    InputIntComponent
+    InputIntComponent,
+    BienvenidosComponent
 
   ],
   imports: [

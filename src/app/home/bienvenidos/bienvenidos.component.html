@@ -1,0 +1,18 @@
+<div class="galeria">
+  <mat-grid-list cols="4" rowHeight="90px">
+    <mat-grid-tile
+        *ngFor="let tile of tiles"
+        [colspan]="tile.cols"
+        [rowspan]="tile.rows"
+        [style.background]="tile.color">
+      <img class="imagen" src="{{tile.text}}" alt="">
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
+
+
+<div class="btn" routerLink="/productos">
+  <button mat-raised-button color="accent"  >VER PRODUCTOS</button>
+</div>
+
+

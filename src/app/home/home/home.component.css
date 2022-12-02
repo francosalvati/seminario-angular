@@ -5,3 +5,12 @@
 .toolbar{
   padding: 0 10%;
 }
+
+i{
+  color: rgb(203, 150, 255);
+}
+
+a{
+  padding: 10% 0;
+  font-size: large;
+}

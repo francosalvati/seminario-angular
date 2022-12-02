@@ -1,7 +1,14 @@
-<mat-toolbar color="primary" class="toolbar">
-  <span>carrito</span>
+<mat-toolbar class="toolbar">
+  <h2 class="title">Carrito</h2>
 </mat-toolbar>
 
+<h2 *ngIf="shopList.length == 0" class="vacio space">el carrito esta vacio</h2>
+
 <mat-list>
-  <mat-list-item *ngFor="let item of shopList" class="item"><p>producto: {{item.nombre}}<span class="space"> cantidad: {{item.quantity}}</span></p> </mat-list-item>
- </mat-list>
+  <mat-list-item *ngFor="let item of shopList">
+    <h2>Producto: {{item.nombre}} </h2>
+    <p class="descripcion">  Cantidad: {{item.quantity}}</p>
+  </mat-list-item>
+</mat-list>
+
+<button mat-flat-button color="accent" *ngIf="shopList.length != 0"  (click)="comprar($event)" routerLink="">Comprar</button>

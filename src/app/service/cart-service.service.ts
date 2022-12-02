@@ -19,5 +19,10 @@ export class CartServiceService {
       carrito.quantity += producto.quantity
     }
   }
+
+  compra(){
+    this.shopList = []
+  }
+
 }
 
